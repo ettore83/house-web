@@ -30,14 +30,11 @@
 
 <style scoped>
 /* CSS desktop*/
-* {
-  margin: 0px;
-  padding: 0px;
-}
 
 main {
   background-color: var(--color-background);
-  height: 90vh;
+  height: 89vh;
+  margin: auto;
 }
 .about {
   width: 80%;
@@ -45,6 +42,9 @@ main {
 }
 .about p {
   color: var(--color-background-value);
+  text-align: justify;
+  
+
 }
 .about-content {
   padding-bottom: 15px;
@@ -82,13 +82,16 @@ img {
 
 /*here start CSS mobile*/
 @media (max-width: 500px) {
-  * {
-    margin: 0px;
-    padding: 0px;
-  }
+  
+  main {
+  width: 340px;
+  margin: auto;
+ 
+}
   .about {
-    width: 300px;
-  }
+  width: 300px;
+  margin: auto;  
+}
 
   #p-about {
     font-size: 20px;

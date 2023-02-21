@@ -101,7 +101,7 @@ const resultFilter = computed(() => {
 <style scoped>
 /* CSS mobile */
 #content-main {
-  width: 360px;
+  width: 320px;
   margin: auto;
   margin-top: 20px;
   box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.126);
