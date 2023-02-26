@@ -239,6 +239,7 @@ button#size {
   main {
     background-color: var(--color-background);
     width: 100vw;
+    height: 100vh;
   }
 
   div#head-main {
