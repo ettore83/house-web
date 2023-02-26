@@ -33,6 +33,7 @@ export default {
   justify-content: space-around;
   align-items: center;
   box-shadow: 1px 1px 5px rgba(103, 76, 76, 0.386);
+ 
 }
 
 #hactive img {

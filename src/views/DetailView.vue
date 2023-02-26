@@ -82,7 +82,7 @@ const deleteBot = (id) => {
 let showDisplay = ref(false);
 function confirmDelete(mostrar) {
   showDisplay.value = mostrar;
-  console.log(showDisplay);
+ 
 }
 
 function houseDetails(id) {
