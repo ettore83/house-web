@@ -118,13 +118,14 @@ div#head-main {
 }
 nav.container {
   display: flex;
+  justify-content: space-between;
 }
 
 div#house-title {
   font-family: var(--font-Montserrat-Bold);
   font-weight: bold;
   font-size: 14px;
-  margin-inline: auto;
+  
 }
 
 div#plus a img {
@@ -222,11 +223,6 @@ button#size {
 
 /* here start CSS desktop */
 @media (min-width: 501px) {
-  * {
-    margin: 0px;
-    padding: 0px;
-  }
-
   a {
     text-decoration: none;
     color: var(--color-background-div-house);
@@ -250,11 +246,10 @@ button#size {
     display: grid;
     gap: 25px;
   }
-
+ 
   div#house-title {
     font-family: var(--font-Montserrat-Bold);
     font-size: 18px;
-    margin-left: 0;
     font-weight: bold;
   }
 
@@ -263,15 +258,13 @@ button#size {
     background-repeat: no-repeat;
     background-size: 18px;
     background-position: left 10px center;
-    width: 200px;
+    width: 150px;
     height: 28px;
     background-color: var(--color-background-button1);
     border-radius: 5px;
     padding: 2px;
     display: flex;
     align-items: center;
-    margin: auto;
-    margin-right: 0%;
   }
 
   #button-create {
@@ -294,11 +287,34 @@ button#size {
   }
 
   form {
-    width: 360px;
+    width: 150px;
   }
 
   div#button-ps {
     margin-right: 0%;
+  }
+
+  button#price {
+    width: 100px;
+    height: 32px;
+  }
+
+  button#size {
+    width: 100px;
+    height: 32px;
+  }  
+}
+
+@media (min-width: 700px) {
+  
+
+  form {
+    width: 260px;
+  }
+
+  div#plus{
+    width: 200px;
+
   }
 
   button#price {
@@ -310,5 +326,7 @@ button#size {
     width: 150px;
     height: 32px;
   }
+
 }
+
 </style>
