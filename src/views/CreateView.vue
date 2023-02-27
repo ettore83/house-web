@@ -91,13 +91,14 @@ const uploadImage = (event) => {
 </script>
 
 <template>
+
   <div class="loading" v-show="state.loading">
     <div class="lds-ripple">
       <div></div>
       <div></div>
     </div>
   </div>
-  <main>
+  <main class="mobile">
     <section class="content">
       <div id="content-title">
         <nav id="back-overview">
@@ -295,10 +296,6 @@ const uploadImage = (event) => {
 </template>
 
 <style scoped>
-* {
-  margin: 0;
-  padding: 0;
-}
 
 /*here start CSS desktop*/
 main {

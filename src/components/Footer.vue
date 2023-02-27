@@ -5,7 +5,7 @@ export default {
 </script>
 
 <template>
-  <div id="overview-footer">
+  <footer id="overview-footer">
     <nav id="hactive">
       <RouterLink to="/"
         ><img
@@ -19,7 +19,7 @@ export default {
         ><img src="./img/ic_mobile_navigarion_info@3x.png" alt="info img" />
       </RouterLink>
     </nav>
-  </div>
+  </footer>
 </template>
 
 <style scoped>
@@ -32,8 +32,7 @@ export default {
   display: flex;
   justify-content: space-around;
   align-items: center;
-  box-shadow: 1px 1px 5px rgba(103, 76, 76, 0.386);
- 
+  box-shadow: 1px 1px 5px rgba(103, 76, 76, 0.386); 
 }
 
 #hactive img {

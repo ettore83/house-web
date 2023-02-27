@@ -1,6 +1,8 @@
-<script setup></script>
+<script setup>
+
+</script>
 <template>
-  <main>
+  <main class="mobile">
     <div class="about">
       <p id="p-about">About</p>
       <h2>About DTT Real Estate</h2>
@@ -33,8 +35,8 @@
 
 main {
   background-color: var(--color-background);
-  height: 89vh;
   margin: auto;
+  
 }
 .about {
   width: 80%;
@@ -42,8 +44,7 @@ main {
 }
 .about p {
   color: var(--color-background-value);
-  text-align: justify;
-  
+  text-align: justify;  
 
 }
 .about-content {
@@ -84,8 +85,9 @@ img {
 @media (max-width: 500px) {
   
   main {
-  width: 340px;
+  width: 360px;
   margin: auto;
+  height:calc(100vh - 60px) ;
  
 }
   .about {
