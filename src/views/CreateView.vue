@@ -375,6 +375,12 @@ div#square-upload {
   display: grid;
   margin-bottom: 20px;
   margin-top: 20px;
+  
+}
+
+div#square-upload input{
+  text-decoration: none;
+
 }
 
 #square-upload img {
