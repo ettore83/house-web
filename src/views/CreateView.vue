@@ -172,14 +172,22 @@ const uploadImage = (event) => {
         <div id="upload">
           <p>Upload picture(PNG or JPG)*</p>
           <div id="square-upload">
-            <a href="">
-              <input
-                type="file"
-                name="image"
-                @change="uploadImage"
-                accept="image/jpeg, image/png"
-              /><img src="../components/img/ic_plus_grey@3x.png" alt="" />
-            </a>
+            <form >
+              <div id="f-upl">
+                <label 
+                  id="label-img" 
+                  for="file"
+                  @change="uploadImage"
+                  type="file"
+                  accept="image/jpeg, image/png"><img src="../components/img/ic_plus_grey@3x.png" alt="" />
+                </label>
+                <input
+                  type="file"
+                  name="arquivo"
+                 />
+                </div>
+              
+            </form>
             <span v-for="error of v$.uploadFoto.$errors" :key="error.$uid"
               >{{ error.$message }}
             </span>
@@ -374,23 +382,29 @@ div#square-upload {
   border: 3px dashed gray;
   display: grid;
   margin-bottom: 20px;
-  margin-top: 20px;
-  
+  margin-top: 20px;  
 }
 
-div#square-upload input{
-  text-decoration: none;
-
+input[type="file"]{
+  display: none;
 }
 
 #square-upload img {
   width: 30px;
 }
 
-#square-upload a {
+#f-upl{
+    height: 100px;
+    width: 100px;
+    display: flex;
+    align-items: center;
+
+}
+
+#label-img{
   width: 100px;
-  margin: auto;
   text-align: center;
+  cursor: pointer;
 }
 
 div#description input {
