@@ -114,6 +114,7 @@ const sendForm = async () => {
     })
     .catch((error) => {
       console.log(error);
+      console.log(state.hasGarage)
     });
 
   state.loading = false;
@@ -232,9 +233,16 @@ const uploadImage = (event) => {
             <p>Size*</p>
             <input type="number" v-model="state.size" placeholder="e.g. 60m2" />
           </div>
-          <div class="form" id="garage">
+          <div class="selectdiv" id="garage">
             <p>Garage*</p>
-            <input type="text" v-model="state.hasGarage" placeholder="Select" />
+            <select 
+            name="garageyn" 
+            id="garageYorNot" 
+            v-model="state.hasGarage"            >
+              <option value="true">true</option>
+              <option value="false">false</option>            
+            </select>
+            <!--<input type="text" v-model="state.hasGarage" placeholder="Select" />-->
           </div>
         </div>
         <span class="s-left" v-for="error of v$.size.$errors" :key="error.$uid"
@@ -318,6 +326,17 @@ const uploadImage = (event) => {
   margin: 0;
   padding: 0;
 }
+
+.selectdiv select {
+  width: 150px;
+  border-radius: 10px;
+  height: 50px; 
+  margin: 10px 0px;
+  padding: 0px 24px;
+  border: none;  
+}
+
+
 /*here start CSS desktop*/
 main {
   background-color: var(--color-background);

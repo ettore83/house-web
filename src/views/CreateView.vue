@@ -178,13 +178,15 @@ const uploadImage = (event) => {
                 <label 
                   id="label-img" 
                   for="file"
-                  @change="uploadImage"  
-                  
-                  accept="image/jpeg, image/png"><img src="../components/img/ic_plus_grey@3x.png" alt="" />
+                  @change="uploadImage"                    
+                  accept="image/jpeg, image/png">
+                  <img src="../components/img/ic_plus_grey@3x.png" alt="" />
                 </label>
                 <input
                   type="file"
                   name="arquivo"
+                  @change="uploadImage"                    
+                  accept="image/jpeg, image/png"
                   />
                 </div>
               
@@ -223,8 +225,8 @@ const uploadImage = (event) => {
             name="garageyn" 
             id="garageYorNot" 
             v-model="state.hasGarage"            >
-              <option value="yes">Yes</option>
-              <option value="no">No</option>            
+              <option value="true">true</option>
+              <option value="false">false</option>            
             </select>
           </div>
         </div>
@@ -404,8 +406,12 @@ div#square-upload {
 }
 
 input[type="file"]{
-  display: none;
+  
 }
+
+
+
+
 
 #square-upload img {
   width: 30px;
