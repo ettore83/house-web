@@ -86,6 +86,7 @@ const sendForm = async () => {
 
 //function to uploadimage
 const uploadImage = (event) => {
+  console.log(uploadImage)
   state.uploadFoto = event.target.files[0];
 };
 </script>
@@ -177,14 +178,14 @@ const uploadImage = (event) => {
                 <label 
                   id="label-img" 
                   for="file"
-                  @change="uploadImage"
-                  type="file"
+                  @change="uploadImage"  
+                  
                   accept="image/jpeg, image/png"><img src="../components/img/ic_plus_grey@3x.png" alt="" />
                 </label>
                 <input
                   type="file"
                   name="arquivo"
-                 />
+                  />
                 </div>
               
             </form>
