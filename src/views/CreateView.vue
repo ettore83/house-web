@@ -185,9 +185,8 @@ const uploadImage = (event) => {
                 <input
                   type="file"
                   name="arquivo"
-                  @change="uploadImage"              
-                  accept="image/jpeg, image/png"
-                  
+                  @change="uploadImage"             
+                  accept="image/jpeg, image/png"                  
                   />
                 </div>
               
@@ -227,7 +226,8 @@ const uploadImage = (event) => {
             id="garageYorNot" 
             v-model="state.hasGarage"            >
               <option value="true">true</option>
-              <option value="false">false</option>            
+              <option value="false">false</option>
+              <option value="selected" selected >selected</option>            
             </select>
           </div>
         </div>
@@ -317,7 +317,7 @@ const uploadImage = (event) => {
 <style scoped>
 
 .selectdiv select {
-  width: 150px;
+  width: 188px;
   border-radius: 10px;
   height: 50px; 
   margin: 10px 0px;
@@ -550,6 +550,10 @@ div#post-button {
   #post-button input {
     width: 300px;
     margin: auto;
+  }
+
+  .selectdiv select{
+    width: 150px;
   }
 }
 /*here start CSS loading animation*/
