@@ -177,16 +177,17 @@ const uploadImage = (event) => {
               <div id="f-upl">
                 <label 
                   id="label-img" 
-                  for="file"
-                  @change="uploadImage"                    
-                  accept="image/jpeg, image/png">
+                  for="archive"
+                  @change="uploadImage"             
+                  >
                   <img src="../components/img/ic_plus_grey@3x.png" alt="" />
                 </label>
                 <input
                   type="file"
                   name="arquivo"
-                  @change="uploadImage"                    
+                  @change="uploadImage"              
                   accept="image/jpeg, image/png"
+                  
                   />
                 </div>
               
@@ -406,7 +407,7 @@ div#square-upload {
 }
 
 input[type="file"]{
-  
+  display: none;
 }
 
 
