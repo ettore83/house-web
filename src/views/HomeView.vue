@@ -67,13 +67,10 @@ onMounted(async () => {
             :class="{ active: sortKey == 'price' }"
           >
             Price
-            <span v-if="sortKey == 'price' && sortOrders.price < 0"
-              >&darr;</span
-            >
-            <span v-if="sortKey == 'price' && sortOrders.price >= 0"
-              >&uarr;</span
-            >
+            <span v-if="sortKey == 'price' && sortOrders.price < 0">&darr;</span>
+            <span v-if="sortKey == 'price' && sortOrders.price >= 0">&uarr;</span>
           </button>
+          
           <button
             id="size"
             value="size"
